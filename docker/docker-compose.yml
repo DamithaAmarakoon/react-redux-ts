@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend:
+    build: ../.
+    image: react-redux-ts
+    ports:
+      - 3000:3000
+    container_name: react-redux-ts-front
+    volumes:
+      - ../src:/react-redux-ts/src:ro
+    env_file:
+      - ../.env
+    tty: true
+    stdin_open: true
