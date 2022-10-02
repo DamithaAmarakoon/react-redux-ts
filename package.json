@@ -58,8 +58,8 @@
     }
   },
   "lint-staged": {
-    "*.+(js|jsx|ts)": [
-      "yarn run format"
+    "*.+(js|jsx|ts|tsx|css|md|json|prettierrc)": [
+      "prettier --write --config ./.prettierrc"
     ]
   }
 }
